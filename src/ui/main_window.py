@@ -567,6 +567,7 @@ class MainWindow(QMainWindow):
             # Update UI
             self.board_widget.set_board(board)
             self.update_statistics()
+            self.analyze_button.setEnabled(True)
 
             self.log_message(
                 f"Board extracted successfully: {board.cols}x{board.rows} with {board.total_mines} mines")
